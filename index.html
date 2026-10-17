@@ -44,26 +44,22 @@
 </header>
 
 <!--
-  cafe-thanks.glb は「小さな馬」と「メッセージ板」を1つにまとめた3Dデータです。
+  cat-3d-thanks.glb は「3Dの猫」と「吹き出し」を1つにまとめたARデータです(猫の大きさ 約36cm)。
   index.html と同じフォルダ(同じ場所)に置いてください。
-  馬は高さ約18cm、メッセージ板はその上に浮かびます。
 -->
 <model-viewer
-  src="cafe-thanks.glb"
-  alt="感謝のメッセージを掲げる小さな馬"
+  src="cat-3d-thanks.glb"
+  alt="「たくさんの働きに感謝します！」と話す猫"
   ar ar-modes="scene-viewer quick-look webxr"
-  camera-controls auto-rotate
+  camera-controls
+  camera-orbit="25deg 78deg auto"
   shadow-intensity="1"
-  autoplay>
+  shadow-softness="0.8">
   <button slot="ar-button" class="ar-btn">📱 ARでお店に呼ぶ</button>
 </model-viewer>
 
 <div class="message">
-  <p>ご来店いただき、<br>本当にありがとうございます。</p>
-  <p>たくさんの方に支えていただき、<br>
-  今日この日を迎えることができました。<br>
-  ゆっくり、のんびり過ごせる場所になれば嬉しいです。</p>
-  <p>どうぞ、また遊びにきてください。</p>
+  <p style="font-size:1.2rem; margin:8px 0;">たくさんの働きに<br>感謝します！</p>
 </div>
 
 <div class="info">
