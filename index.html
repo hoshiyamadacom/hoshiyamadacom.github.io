@@ -44,20 +44,18 @@
 </header>
 
 <!--
-  3Dモデルの差し替え方:
-  src の URL を、自分で用意した .glb ファイル(例: "animal.glb")に変更してください。
-  下の馬はテスト用のサンプルです。
+  cafe-thanks.glb は「小さな馬」と「メッセージ板」を1つにまとめた3Dデータです。
+  index.html と同じフォルダ(同じ場所)に置いてください。
+  馬は高さ約18cm、メッセージ板はその上に浮かびます。
 -->
 <model-viewer
-  src="https://modelviewer.dev/shared-assets/models/Horse.glb"
-  alt="感謝を伝える3Dキャラクター"
+  src="cafe-thanks.glb"
+  alt="感謝のメッセージを掲げる小さな馬"
   ar ar-modes="scene-viewer quick-look webxr"
   camera-controls auto-rotate
   shadow-intensity="1"
   autoplay>
   <button slot="ar-button" class="ar-btn">📱 ARでお店に呼ぶ</button>
-  <div class="hotspot" slot="hotspot-thanks"
-       data-position="0 1.6 0" data-normal="0 1 0">ありがとう!</div>
 </model-viewer>
 
 <div class="message">
